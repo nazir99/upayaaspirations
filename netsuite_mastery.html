@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Rollano | NetSuite Mastery</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --text-color: #ecf0f1;
+            --background-color: #1a1a2e;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: rgba(44, 62, 80, 0.8);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: var(--text-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        .hero {
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(45deg, #1a1a2e, #16213e, #0f3460);
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            animation: fadeInUp 1s ease-out 0.5s both;
+        }
+
+        .section {
+            padding: 4rem 0;
+        }
+
+        .section:nth-child(odd) {
+            background-color: #16213e;
+        }
+
+        .section:nth-child(even) {
+            background-color: #0f3460;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .grid-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .grid-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+        }
+
+        .highlight-box {
+            background-color: rgba(52, 152, 219, 0.1);
+            border-left: 4px solid var(--secondary-color);
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 0 5px 5px 0;
+        }
+
+        .highlight-box h4 {
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #1a1a2e;
+            color: var(--text-color);
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">GR | NetSuite Mastery</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#process-understanding">Process</a></li>
+                <li><a href="#system-capabilities">Capabilities</a></li>
+                <li><a href="#data-structure">Data Structure</a></li>
+                <li><a href="#user-empowerment">User Empowerment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>NetSuite Mastery</h1>
+                <p>Empowering Users to Understand, Utilize, and Grow with NetSuite</p>
+            </div>
+        </section>
+
+        <section id="process-understanding" class="section">
+            <div class="container">
+                <h2>Process-Level Understanding</h2>
+                <div class="grid">
+                    <div class="grid-item">
+                        <h3>End-to-End Workflow Mapping</h3>
+                        <p>Guide users through comprehensive workflow mapping, connecting individual tasks to the broader business processes.</p>
+                    </div>
+                    <div class="grid-item">
+                        <h3>Process Optimization Workshops</h3>
+                        <p>Conduct interactive workshops to identify inefficiencies and collaboratively design optimized processes within NetSuite.</p>
+                    </div>
+                    <div class="grid-item">
+                        <h3>Role-Based Process Training</h3>
+                        <p>Deliver tailored training sessions that focus on each user's role within the overall business processes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="system-capabilities" class="section">
+            <div class="container">
+                <h2>System Capabilities Exploration</h2>
+                <div class="grid">
+                    <div class="grid-item">
+                        <h3>Feature Deep Dives</h3>
+                        <p>Conduct in-depth explorations of NetSuite features, demonstrating their practical applications in real-world scenarios.</p>
+                    </div>
+                    <div class="grid-item">
+                        <h3>Customization Possibilities</h3>
+                        <p>Showcase NetSuite's customization capabilities, encouraging users to envision potential improvements to their workflows.</p>
+                    </div>
+                    <div class="grid-item">
+                        <h3>Integration Landscape</h3>
+                        <p>Educate users on NetSuite's integration ecosystem, highlighting opportunities for enhanced business operations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="data-structure" class="section">
+            <div class="container">
+                <h2>Data Structure Comprehension</h2>
+                <div class="grid">
+                    <div class="grid-item">
+                        <h3>Data Model Visualization</h3>
+                        <p>Create visual representations of NetSuite's data model, helping users understand relationships between different record types.</p>
+                    </div>
+                    <div class="grid-item">
+                        <h3>Field-Level Training</h3>
+                        <p>Provide detailed explanations of key fields, their impacts, and best practices for data entry and management.</p>
+                    </div>
+                    <div class="grid-item">
+                        <h3>Reporting Structure Workshops</h3>
+                        <p>Guide users through the creation of reports and dashboards, emphasizing the underlying data structures.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="user-empowerment" class="section">
+            <div class="container">
+                <h2>User Empowerment Strategies</h2>
+                <div class="grid">
+                    <div class="grid-item">
+                        <h3>Collaborative Solution Design</h3>
+                        <p>Involve end users in the solution design process, valuing their insights and fostering ownership of the system.</p>
+                    </div>
+                    <div class="grid-item">
+                        <h3>Continuous Learning Paths</h3>
+                        <p>Develop personalized learning paths for users, encouraging ongoing skill development and system mastery.</p>
+                    </div>
+                    <div class="grid-item">
+                        <h3>Knowledge Sharing Platforms</h3>
+                        <p>Implement internal knowledge bases and forums to facilitate peer-to-peer learning and best practice sharing.</p>
+                    </div>
+                </div>
+                <div class="highlight-box">
+                    <h4>Success Story: User-Driven Innovation</h4>
+                    <p>By empowering users with deep system understanding, one client achieved:</p>
+                    <ul>
+                        <li>30% increase in user-initiated process improvements</li>
+                        <li>50% reduction in support tickets for basic issues</li>
+                        <li>Successful user-led implementation of custom workflows, saving 20 hours per week in manual processes</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Gabriel Rollano | NetSuite Mastery Expert. Empowering users to maximize NetSuite's potential.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Dynamic header
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(44, 62, 80, 0.9)';
+            } else {
+                header.style.background = 'rgba(44, 62, 80, 0.8)';
+            }
+        });
+    </script>
+</body>
+</html>
